@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PostsController < ApplicationController
   def new
     @post = Post.new
@@ -20,7 +22,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     if @post.update(post_params)
       redirect_to @post
-    else 
+    else
       render 'edit'
     end
   end
@@ -29,11 +31,11 @@ class PostsController < ApplicationController
     @posts = Post.all.order('created_at DESC')
   end
 
-  def destroy 
+  def destroy
     @post = Post.find(params[:id])
     @post.destroy
     redirect_to posts_url
-  end 
+  end
 
   private
 
