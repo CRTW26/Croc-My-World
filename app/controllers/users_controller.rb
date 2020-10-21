@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  
+  def index
+    @users = User.all
+  end 
 
   def new
     @user = User.new
@@ -6,7 +10,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(post_params)
-    #render 'posts/index'
+    redirect_to users_path
   end
 
 
