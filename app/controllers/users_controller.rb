@@ -6,11 +6,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(post_params)
+    #render 'posts/index'
   end
 
 
   private
     def post_params
-      params.require(:user).permit(:name, :email, :password)
+      params.require(:user).permit(:email, :password, :name)
     end
 end
