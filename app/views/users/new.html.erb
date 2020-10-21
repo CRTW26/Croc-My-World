@@ -1,7 +1,7 @@
 <h1> Register </h1>
 
-<%= form_with(model: users, local:true) do |form| %>
-<%=form.label :email %>
+<%= form_with(model: @user, local:true) do |form| %>
+<%= form.label :email %>
 <%= form.text_area :email %>
 <%= form.label :password %>
 <%= form.text_area :password %>
