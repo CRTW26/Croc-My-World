@@ -5,7 +5,6 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :owned_post, only: [:edit, :update, :destroy]
 
-
   def new
     @post = Post.new
   end
@@ -54,8 +53,7 @@ class PostsController < ApplicationController
   def owned_post
     unless @post.user_id == current_user.id
       flash[:alert] "That post doesn't belong to you!"
-      redirect_to posts_url
-      
+      redirect_to posts_url   
     end
   end
 
