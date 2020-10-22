@@ -23,7 +23,8 @@ class UsersController < ApplicationController
 
   def update 
     @user = User.find(params[:id])
-    if @user.update(user_params)
+    params = post: {:email, :name}
+    if @user.update(params)
       redirect_to @user
     else
       render 'edit'
