@@ -8,7 +8,8 @@ RSpec.feature 'Timeline', type: :feature do
     expect(page).to have_content("Johnny Yip's page")
   end
   
-  scenario "User can't enter an existing email"
+  scenario "User can't enter an existing email" do
+  end
 
 end
 
