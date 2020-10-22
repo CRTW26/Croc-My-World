@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(post_params)
-    redirect_to users_url
+    redirect_to posts_path
   end
 
 
