@@ -1,5 +1,7 @@
 <h1> Your page - all posts below </h1>
 <%= @user.name %>
+<%= @user.password %>
+<%= @user.email %>
 <% @users.each do |user| %>
   <% user.posts.each do |post| %>
     <%= post.post_message %>

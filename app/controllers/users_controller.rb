@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(post_params)
+    @user = User.create(user_params)
     redirect_to @user
   end
 
@@ -21,8 +21,17 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def update 
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      redirect_to @user
+    else
+      render 'edit'
+    end
+  end
+
   private
-    def post_params
+    def user_params
       params.require(:user).permit(:email, :password, :name)
     end
 end
