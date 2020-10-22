@@ -6,5 +6,6 @@ class User < ApplicationRecord
   validates_presence_of :email, :name
   validates :password, presence: true, length: {minimum: 6, maximum: 10}, on: :create
   validates :password, length: {minimum: 6, maximum: 10}, on: :update, allow_blank: true
+  validates :email, uniqueness: true
   has_many :posts
 end
