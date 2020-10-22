@@ -1,11 +1,12 @@
-<h1> Edit User </h1>
+<h1> Edit Details </h1>
 
 <%= form_with(model: @user, local:true) do |form| %>
 <%=form.label :name %>
 <%= form.text_area :name%>
 <%=form.label :email %>
 <%= form.text_area :email%>
-<%=form.label :password %>
-<%= form.password_field :password%>
+<% form.label :password %>
+<% form.text_area :password = @user.password %>
+
 <%= form.submit "Submit"%>
 <%end%>

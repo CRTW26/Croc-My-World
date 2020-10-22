@@ -17,7 +17,6 @@ RSpec.describe UsersController, type: :controller do
       get :edit, params: { id: user.id }
       expect(response).to have_http_status(200)
     end
-
   end
 
   describe 'POST' do
@@ -30,13 +29,13 @@ RSpec.describe UsersController, type: :controller do
   describe 'PATCH' do
     it 'checks that it redirects to @user' do
       user = User.create email: 'email@email.com', password: 'password', name: 'name'
-      patch :update, params: {id: user.id, user: {email: 'user@user.com', password: '123456', name: 'John Smith' } }
+      patch :update, params: {id: user.id, user: {email: 'user@user.com', password: user.password, name: 'John Smith' } }
       expect(response).to be_redirect
     end
     it 'checks user can be edited' do
       user = User.create email: 'email@email.com', password: 'password', name: 'name'
-      patch :update, params: {id: user.id, user: {email: 'email@email.com', password: 'password', name: 'John Smith' } }
-      expect(user.name).to eq 'John Smith'
+      patch :update, params: {id: user.id, user: {email: 'email@email.com', password: user.password, name: 'John Smith' } }
+      expect(User.find_by(name: 'John Smith')).to be
     end
 
   end
