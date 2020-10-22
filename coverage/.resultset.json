@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/features/test_helpers.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/features/test_helpers.rb": {
         "lines": [
           null,
           null,
@@ -13,7 +13,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/controllers/posts_controller_spec.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/controllers/posts_controller_spec.rb": {
         "lines": [
           null,
           null,
@@ -85,7 +85,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/rails_helper.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/rails_helper.rb": {
         "lines": [
           null,
           null,
@@ -148,7 +148,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/environment.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -159,7 +159,7 @@
           1
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/application.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/application.rb": {
         "lines": [
           null,
           null,
@@ -183,7 +183,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/boot.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/boot.rb": {
         "lines": [
           null,
           null,
@@ -192,7 +192,7 @@
           1
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/environments/test.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/environments/test.rb": {
         "lines": [
           null,
           null,
@@ -240,7 +240,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/application_controller_renderer.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -251,7 +251,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/assets.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -271,7 +271,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/backtrace_silencers.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -283,7 +283,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/cookies_serializer.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -294,7 +294,7 @@
           1
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/devise.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/devise.rb": {
         "lines": [
           null,
           null,
@@ -609,7 +609,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/filter_parameter_logging.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -619,7 +619,7 @@
           1
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/inflections.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -640,7 +640,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/mime_types.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -649,7 +649,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/initializers/wrap_parameters.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -669,24 +669,11 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/config/routes.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/config/routes.rb": {
         "lines": [
           null,
           null,
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/app/models/user.rb": {
-        "lines": [
-          1,
-          null,
-          null,
           1,
           null,
           1,
@@ -694,7 +681,19 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/app/models/application_record.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/louis/Makers/Projects/Croc-My-World/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -703,7 +702,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/app/helpers/application_helper.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
@@ -711,13 +710,13 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/app/helpers/users_helper.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/app/helpers/users_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/app/controllers/posts_controller.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/app/controllers/posts_controller.rb": {
         "lines": [
           null,
           null,
@@ -766,7 +765,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/app/controllers/application_controller.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -775,7 +774,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/controllers/users_controller_spec.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/controllers/users_controller_spec.rb": {
         "lines": [
           1,
           null,
@@ -791,7 +790,6 @@
           1,
           null,
           null,
-          null,
           1,
           1,
           1,
@@ -799,6 +797,16 @@
           null,
           null,
           null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -812,7 +820,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/app/controllers/users_controller.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/app/controllers/users_controller.rb": {
         "lines": [
           1,
           null,
@@ -828,6 +836,13 @@
           1,
           1,
           null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
           null,
           null,
           1,
@@ -837,40 +852,11 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/features/delete_post_spec.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/features/delete_post_spec.rb": {
         "lines": [
           null,
           null,
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/features/edit_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/features/show_spec.rb": {
-        "lines": [
-          null,
           null,
           1,
           1,
@@ -881,12 +867,11 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/features/user_can_submit_posts_spec.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/features/edit_spec.rb": {
         "lines": [
           null,
           null,
           1,
-          null,
           1,
           1,
           1,
@@ -898,7 +883,37 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/helpers/users_helper_spec.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/features/show_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/features/user_can_submit_posts_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/helpers/users_helper_spec.rb": {
         "lines": [
           1,
           null,
@@ -917,7 +932,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/models/post_spec.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/models/post_spec.rb": {
         "lines": [
           null,
           null,
@@ -929,7 +944,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/app/models/post.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/app/models/post.rb": {
         "lines": [
           null,
           null,
@@ -938,7 +953,7 @@
           null
         ]
       },
-      "/Users/victoriajusko/Projects/U-Croc-My-World/spec/models/user_spec.rb": {
+      "/Users/louis/Makers/Projects/Croc-My-World/spec/models/user_spec.rb": {
         "lines": [
           null,
           null,
@@ -959,7 +974,6 @@
           1,
           1,
           null,
-          null,
           1,
           1,
           1,
@@ -969,10 +983,6 @@
         ]
       }
     },
-<<<<<<< HEAD
-    "timestamp": 1603293857
-=======
-    "timestamp": 1603287281
->>>>>>> name
+    "timestamp": 1603360596
   }
 }

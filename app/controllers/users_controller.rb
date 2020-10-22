@@ -10,9 +10,16 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(post_params)
-    redirect_to users_url
+    redirect_to @user
   end
 
+  def show
+    @user = User.find(params[:id])
+  end
+
+  def edit
+    @user = User.find(params[:id])
+  end
 
   private
     def post_params

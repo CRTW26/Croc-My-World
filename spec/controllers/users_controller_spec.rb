@@ -11,6 +11,18 @@ RSpec.describe UsersController, type: :controller do
       get :new 
       expect(response).to have_http_status(200)
     end
+
+    it 'responds with an ok' do
+      user = User.create email: 'email@email.com', password: 'password', name: 'name'
+      get :edit, params: { id: user.id }
+      expect(response).to have_http_status(200)
+    end
+
+    # it 'redirects to an edit page' do
+
+    #   get :edit
+    #   expect(response).to redirect_to(user_url)
+    # end
   end
 
   describe 'POST' do
@@ -19,15 +31,12 @@ RSpec.describe UsersController, type: :controller do
       expect(response).to be_redirect
     end
   end
-    # it 'creates a new user'
 
-  # describe 'POST /' do
-  #   it 'can add a new user' do
-  #     post :new 
 
+   
   
 
 end
 
-# it can create new users
+
 

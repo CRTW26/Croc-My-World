@@ -1,7 +1,10 @@
-<h1> Register </h1>
+<h1> Your page - all posts below </h1>
+<%= @user.name %>
 <% @users.each do |user| %>
   <% user.posts.each do |post| %>
     <%= post.post_message %>
     <%= post.post_created_at%>
   <% end %>
 <% end %>
+
+
