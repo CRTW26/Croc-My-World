@@ -5,7 +5,7 @@ RSpec.feature 'Timeline', type: :feature do
     visit '/users/new'
     fill_in 'Name', with: 'Joe Bloggs'
     fill_in 'Email', with: 'joe@bloggs.com'
-    fill_in 'Password', with: 'secretpassword'
+    fill_in 'Password', with: 'secret'
     click_button 'Submit'
     click_link 'Edit'
     find_field('user[name]').set('John Smith')
