@@ -2,11 +2,14 @@ require 'rails_helper'
 
 RSpec.describe PostsController, type: :controller do
   
+
+
   before(:each) do 
     user = FactoryBot.create(:user)
     @new_post = FactoryBot.create(:post) 
     sign_in(user)
   end 
+
   
   describe "GET / " do
     it "responds with 200" do
