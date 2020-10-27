@@ -1,2 +1,7 @@
-<h1>Friends</h1>
+<% @users.each do |user| %>
+  <%= user.name %>
+  <%= link_to "View Profile", new_friendship_path(friend_id: user.id)%>
+  <br>
+<% end %>
+
 

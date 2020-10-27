@@ -23,7 +23,7 @@ RSpec.describe FriendshipsController, type: :controller do
   end 
 
   describe 'POST/create' do
-    it 'adds a friend' do 
+    it 'adds a friend request' do 
     post :create, params: { friendship: { friend_id: @friend.id} }
     expect(response).to redirect_to friendships_path
     end 
