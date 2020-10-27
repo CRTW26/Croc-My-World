@@ -26,4 +26,10 @@ RSpec.describe User, type: :model do
     expect(user.friends).to be_empty
   end
  
+  it "has a pending friend request" do
+    user = FactoryBot.create(:user)
+    user2 = FactoryBot.create(:user, :friend)
+    friendship = FactoryBot.create(:friendship)
+    expect(user.pending).to_not be_empty
+  end 
 end

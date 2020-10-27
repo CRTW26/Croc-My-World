@@ -18,4 +18,8 @@ class User < ApplicationRecord
     friends_array.compact
   end
 
+  def pending 
+    friendships.map{ |friendship| friendship.friend if !friendship.confirmed }.compact
+  end 
+
 end
