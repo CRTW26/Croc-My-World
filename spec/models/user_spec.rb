@@ -40,4 +40,13 @@ RSpec.describe User, type: :model do
     expect(user2.requests).to_not be_empty 
   end
 
+  it 'can confirm friend request' do
+    user = FactoryBot.create(:user)
+    user2 = FactoryBot.create(:user, :friend)
+    friendship = FactoryBot.create(:friendship)
+    user2.confirm(user)
+    expect(user2.requests).to be_empty
+    expect(user.pending).to be_empty
+  end 
+
 end
