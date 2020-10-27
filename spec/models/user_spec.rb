@@ -49,4 +49,12 @@ RSpec.describe User, type: :model do
     expect(user.pending).to be_empty
   end 
 
+  it 'returns true for users being friends' do
+     user = FactoryBot.create(:user)
+    user2 = FactoryBot.create(:user, :friend)
+    friendship = FactoryBot.create(:friendship)
+    user2.confirm(user) 
+    expect(user.friend?(user2)).to eq(true)
+  end 
+
 end
