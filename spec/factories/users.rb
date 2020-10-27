@@ -6,5 +6,12 @@ FactoryBot.define do
     name { Faker::Name.name }
     email { Faker::Internet.unique.email }
     password { Faker::Internet.password(max_length: 10) }
+  
+    trait :friend do 
+      id { 6 } 
+      # name { Faker::Name.name }
+      # email { Faker::Internet.unique.email }
+      # password { Faker::Internet.password(max_length: 10) }
+    end 
   end
 end
