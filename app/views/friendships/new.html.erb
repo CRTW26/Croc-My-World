@@ -1,6 +1,10 @@
 <h1>User Profile</h1>
-
-<%= form_for @friendship do |form| %>
-  <%= form.hidden_field :friend_id, value: "#{params[:friend_id]}" %> 
+<% @friend = User.find(params[:friend_id]) %>
+<% if !current_user.pending.include?(@friend) %>
+  <%= form_for @friendship do |form| %>
+  <%= form.text_field :friend_id, value: "#{params[:friend_id]}" %> 
   <%= form.submit 'Add friend' %>
+      <% end %>
+  <% else %>
+  <p>You have alreay sent request</p>
 <% end %>
