@@ -32,4 +32,12 @@ RSpec.describe User, type: :model do
     friendship = FactoryBot.create(:friendship)
     expect(user.pending).to_not be_empty
   end 
+
+  it 'can view friend requests' do 
+    user = FactoryBot.create(:user)
+    user2 = FactoryBot.create(:user, :friend)
+    friendship = FactoryBot.create(:friendship)
+    expect(user2.requests).to_not be_empty 
+  end
+
 end
