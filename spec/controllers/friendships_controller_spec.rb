@@ -14,4 +14,11 @@ RSpec.describe FriendshipsController, type: :controller do
     end 
   end 
 
+  describe 'GET/new' do 
+    it 'returns page to add friend' do 
+    get :new 
+    expect(response).to have_http_status(200)
+    end 
+  end 
+
 end 
