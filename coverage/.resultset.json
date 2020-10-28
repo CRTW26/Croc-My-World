@@ -1,33 +1,33 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/test_helpers.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/test_helpers.rb": {
         "lines": [
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
           null,
           null,
           1,
           18,
           0,
           0,
-          0,
-          0,
-          0,
-          0,
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          22,
+          22,
+          22,
+          22,
+          22,
+          22,
+          22,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -37,7 +37,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/controllers/comments_controller_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/controllers/comments_controller_spec.rb": {
         "lines": [
           null,
           null,
@@ -111,7 +111,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/rails_helper.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/rails_helper.rb": {
         "lines": [
           null,
           null,
@@ -177,7 +177,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/environment.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -188,7 +188,7 @@
           1
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/application.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/application.rb": {
         "lines": [
           null,
           null,
@@ -212,7 +212,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/boot.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/boot.rb": {
         "lines": [
           null,
           null,
@@ -221,19 +221,19 @@
           1
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/environments/test.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/environments/test.rb": {
         "lines": [
           null,
           null,
           1,
           null,
-          null,
+          1,
           null,
           null,
           null,
           null,
           1,
-          null,
+          1,
           null,
           null,
           null,
@@ -269,7 +269,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/application_controller_renderer.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -280,7 +280,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/assets.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -300,7 +300,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/backtrace_silencers.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -312,7 +312,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/cookies_serializer.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/cookies_serializer.rb": {
         "lines": [
           null,
           null,
@@ -323,7 +323,7 @@
           1
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/devise.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/devise.rb": {
         "lines": [
           null,
           null,
@@ -638,7 +638,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/filter_parameter_logging.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -648,7 +648,7 @@
           1
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/inflections.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -669,7 +669,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/mime_types.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -678,7 +678,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/initializers/wrap_parameters.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -698,7 +698,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/factories/comments.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/factories/comments.rb": {
         "lines": [
           null,
           null,
@@ -714,7 +714,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/factories/likes.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/factories/likes.rb": {
         "lines": [
           null,
           null,
@@ -727,7 +727,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/factories/old_post.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/factories/old_post.rb": {
         "lines": [
           null,
           null,
@@ -737,7 +737,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/factories/posts.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/factories/posts.rb": {
         "lines": [
           null,
           null,
@@ -761,7 +761,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/factories/users.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/factories/users.rb": {
         "lines": [
           null,
           null,
@@ -777,31 +777,17 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/config/routes.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/config/routes.rb": {
         "lines": [
           null,
           null,
           1,
           1,
           1,
-          null,
-          1,
           1,
           null,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/student/Makers/week8/acebook-rails-template/app/models/user.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          null,
           null,
           1,
           1,
@@ -810,7 +796,25 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/models/application_record.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/models/user.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -819,7 +823,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/helpers/application_helper.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/helpers/application_helper.rb": {
         "lines": [
           null,
           null,
@@ -827,7 +831,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/helpers/comments_helper.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/helpers/comments_helper.rb": {
         "lines": [
           null,
           null,
@@ -835,7 +839,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/helpers/likes_helper.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/helpers/likes_helper.rb": {
         "lines": [
           null,
           null,
@@ -843,7 +847,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/helpers/registrations_helper.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/helpers/registrations_helper.rb": {
         "lines": [
           null,
           null,
@@ -851,7 +855,13 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/controllers/comments_controller.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/helpers/users_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/app/controllers/comments_controller.rb": {
         "lines": [
           null,
           null,
@@ -911,7 +921,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/controllers/application_controller.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -923,13 +933,14 @@
           1,
           null,
           1,
-          18,
-          18,
+          70,
+          70,
+          93,
           null,
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/controllers/likes_controller_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/controllers/likes_controller_spec.rb": {
         "lines": [
           null,
           null,
@@ -957,7 +968,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/controllers/likes_controller.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/controllers/likes_controller.rb": {
         "lines": [
           null,
           null,
@@ -994,7 +1005,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/controllers/posts_controller_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/controllers/posts_controller_spec.rb": {
         "lines": [
           null,
           null,
@@ -1093,7 +1104,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/controllers/posts_controller.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/controllers/posts_controller.rb": {
         "lines": [
           null,
           null,
@@ -1135,7 +1146,7 @@
           null,
           null,
           1,
-          1,
+          24,
           null,
           null,
           1,
@@ -1162,7 +1173,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/add_comment_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/add_comment_spec.rb": {
         "lines": [
           null,
           null,
@@ -1171,43 +1182,13 @@
           1,
           1,
           1,
-          0,
+          1,
           0,
           0,
           0,
           null,
           null,
           1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/delete_comment_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
           1,
           1,
           0,
@@ -1221,7 +1202,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/delete_post_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/delete_comment_spec.rb": {
         "lines": [
           null,
           null,
@@ -1230,35 +1211,7 @@
           1,
           1,
           1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
           1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/edit_comment_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          0,
-          0,
-          0,
           0,
           0,
           0,
@@ -1268,7 +1221,7 @@
           null,
           1,
           1,
-          0,
+          1,
           0,
           0,
           0,
@@ -1279,7 +1232,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/edit_post_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/delete_post_spec.rb": {
         "lines": [
           null,
           null,
@@ -1288,9 +1241,7 @@
           1,
           1,
           1,
-          0,
-          0,
-          0,
+          1,
           0,
           0,
           0,
@@ -1298,7 +1249,7 @@
           null,
           1,
           1,
-          0,
+          1,
           0,
           0,
           0,
@@ -1307,26 +1258,18 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/like_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/edit_comment_spec.rb": {
         "lines": [
           null,
           null,
           1,
-          1,
-          1,
-          0,
-          0,
-          null,
           null,
           1,
           1,
-          0,
-          0,
-          0,
-          null,
-          null,
           1,
           1,
+          0,
+          0,
           0,
           0,
           0,
@@ -1336,23 +1279,7 @@
           null,
           1,
           1,
-          0,
-          0,
-          0,
-          null,
-          null,
           1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          1,
-          0,
           0,
           0,
           0,
@@ -1363,12 +1290,112 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/new_post_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/edit_post_spec.rb": {
         "lines": [
           null,
           null,
           1,
           null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/like_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/new_post_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/show_post_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
           1,
           1,
           1,
@@ -1378,26 +1405,68 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/features/show_post_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/features/view_users_spec.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/helpers/comments_helper_spec.rb": {
         "lines": [
           null,
           null,
           1,
           null,
-          1,
-          1,
-          1,
-          0,
-          0,
-          0,
           null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/helpers/comments_helper_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/helpers/users_helper_spec.rb": {
         "lines": [
-          null,
-          null,
           1,
           null,
           null,
@@ -1410,11 +1479,12 @@
           null,
           null,
           null,
+          1,
           1,
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/models/comment_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/models/comment_spec.rb": {
         "lines": [
           null,
           null,
@@ -1445,7 +1515,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/models/comment.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/models/comment.rb": {
         "lines": [
           null,
           null,
@@ -1456,7 +1526,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/models/like_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/models/like_spec.rb": {
         "lines": [
           null,
           null,
@@ -1485,7 +1555,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/models/like.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/models/like.rb": {
         "lines": [
           null,
           null,
@@ -1495,7 +1565,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/models/post_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/models/post_spec.rb": {
         "lines": [
           null,
           null,
@@ -1521,7 +1591,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/app/models/post.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/app/models/post.rb": {
         "lines": [
           null,
           null,
@@ -1533,7 +1603,7 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/models/user_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/models/user_spec.rb": {
         "lines": [
           null,
           null,
@@ -1559,17 +1629,56 @@
           null
         ]
       },
-      "/Users/student/Makers/week8/acebook-rails-template/spec/requests/likes_request_spec.rb": {
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/requests/likes_request_spec.rb": {
         "lines": [
           null,
           null,
           1,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/requests/users_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/spec/views/users/index.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/victoriajusko/Projects/Croc-My-World/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1603882615
+    "timestamp": 1603904926
   }
 }
