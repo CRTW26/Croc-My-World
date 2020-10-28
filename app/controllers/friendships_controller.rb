@@ -6,20 +6,16 @@ class FriendshipsController < ApplicationController
 
   def new
     @friendship = Friendship.new
+       @friend = User.find(params[:friend_id])
   end
 
   def show
   end
 
   def create
-    # if friendship_pending.friend.id == :friend_id
-    #   'Friend already requested'
-    # else
-      @friendship = Friendship.create(friend_params)
-        # if @friendship.save 
+      @friendship = Friendship.create(friend_params) 
         flash[:success] = "Friend request sent!"
         redirect_to friendships_url
-    
   end 
 
  private

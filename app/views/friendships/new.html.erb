@@ -1,5 +1,4 @@
 <h1>User Profile</h1>
-<% @friend = User.find(params[:friend_id]) %>
 <% if !current_user.pending.include?(@friend) %>
   <%= form_for @friendship do |form| %>
   <%= form.text_field :friend_id, value: "#{params[:friend_id]}" %> 
