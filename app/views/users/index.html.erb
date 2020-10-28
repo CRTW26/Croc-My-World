@@ -1,0 +1,6 @@
+List Users
+<% @users.each do |user| %>
+  <%= user.name %><br/>
+  <%= user.email %><br/>
+  <%= image_tag(user.avatar) %>
+<% end %>
