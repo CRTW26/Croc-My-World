@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :friendships do 
     collection do 
       patch :update
+      delete :destroy
     end 
   end
 end

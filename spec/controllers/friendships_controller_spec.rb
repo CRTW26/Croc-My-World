@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe FriendshipsController, type: :controller do
 
   before(:each) do 
-    user = FactoryBot.create(:user)
+    @user = FactoryBot.create(:user)
     @friend = FactoryBot.create(:user, :friend)
-    sign_in(user)
+    sign_in(@user)
   end 
 
   describe 'GET/' do 
@@ -36,6 +36,19 @@ RSpec.describe FriendshipsController, type: :controller do
      patch :update, params: { friend_id: @friend.id} 
      expect(response).to redirect_to friendships_path
     end 
-  end 
+  end
 
+  describe 'DELETE/delete' do
+    it 'destroys a friend request' do
+      friendship = FactoryBot.create(:friendship, :confirm_request)
+      delete :destroy, params: { friend_id: @friend.id}
+      expect(response).to redirect_to friendships_path
+    end
+
+    it 'destroys a friend request' do
+      friendship = FactoryBot.create(:friendship, :confirm_request)
+      delete :destroy, params: { friend_id: @friend.id}
+      expect(@user.requests).to be_empty
+    end
+  end
 end 
