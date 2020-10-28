@@ -50,11 +50,11 @@ RSpec.describe User, type: :model do
   end 
 
   it 'returns true for users being friends' do
-     user = FactoryBot.create(:user)
+    user = FactoryBot.create(:user)
     user2 = FactoryBot.create(:user, :friend)
-    friendship = FactoryBot.create(:friendship)
-    user2.confirm(user) 
-    expect(user.friend?(user2)).to eq(true)
+    friendship = FactoryBot.create(:friendship, :confirm_request)
+    user.confirm(user2) 
+    expect(user2.friend?(user)).to eq(true)
   end 
 
 end
