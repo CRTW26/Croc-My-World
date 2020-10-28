@@ -1,5 +1,5 @@
 class FriendshipsController < ApplicationController
-  before_action :find_friend, only: [:new, :update, :destroy] 
+  before_action :find_friend, only: [:new, :update] 
 
   def index
     @users = User.all
@@ -15,6 +15,9 @@ class FriendshipsController < ApplicationController
     flash[:success] = "Friend request sent!"
   end 
 
+  def show 
+  end
+
   def update
     if current_user.confirm(@friend)
       redirect_to friendships_url
@@ -25,12 +28,18 @@ class FriendshipsController < ApplicationController
   end 
 
   def destroy
-    if current_user.reject(@friend)
+    #if 
+    @friendship = Friendship.find_by user_id: params[:friend_id] , friend_id: current_user.id
+    p params[:friend_id]
+    p current_user.id
+    p @friendship
+    @friendship.destroy
+      #current_user.reject(@friend)
       redirect_to friendships_path 
       flash[:success] = "Friend request denied!"
-    else
-      render 'new'
-    end
+    # else
+    #   render 'new'
+    # end
   end
 
  private

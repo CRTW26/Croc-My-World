@@ -4,10 +4,10 @@
 <% elsif @friend.pending.include?(current_user) %>
   <p>You have request pending</p>
   <%= link_to 'Confirm', friendships_path(friend_id: @friend.id), :method => :patch %>
-  <%= link_to 'Reject', friendships_path(friend_id: @friend.id), :method => :destroy %>
+  <%= link_to 'Reject', friendships_path(user_id: current_user.id, friend_id: @friend.id), :method => :delete %>
 <% else%> 
   <%= form_for @friendship do |form| %>
-  <%= form.text_field :friend_id, value: "#{params[:friend_id]}" %> 
+  <%= form.hidden_field :friend_id, value: "#{params[:friend_id]}" %> 
   <%= form.submit 'Add friend' %>
       <% end %>
 <% end %> 

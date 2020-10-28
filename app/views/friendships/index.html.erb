@@ -2,6 +2,9 @@
   <% unless current_user.id == user.id %>
     <%= user.name %>
     <%= link_to "View Profile", new_friendship_path(friend_id: user.id)%>
+    <% if current_user.friend?(user) %>
+    <%= 'friend!' %>
+    <% end %>
     <br>
   <% end %>
 <% end %>
