@@ -6,7 +6,7 @@ class FriendshipsController < ApplicationController
 
   def new
     @friendship = Friendship.new
-       @friend = User.find(params[:friend_id])
+    @friend = User.find(params[:friend_id])
   end
 
   def show
@@ -16,6 +16,16 @@ class FriendshipsController < ApplicationController
       @friendship = Friendship.create(friend_params) 
         flash[:success] = "Friend request sent!"
         redirect_to friendships_url
+  end 
+
+  # def edit
+  #   @friend = User.find(params[:friend_id]) 
+  # end 
+
+  def update
+    @friend = User.find(params[:friend_id])  
+    current_user.confirm(@friend)
+    redirect_to friendships_url
   end 
 
  private
