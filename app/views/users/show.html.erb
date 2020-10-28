@@ -2,4 +2,6 @@
 <h5><%= @user.email%></h5>
 <%if @user.avatar.attached?%>
 <%= image_tag(@user.avatar)%>
+<%else%>
+<image src="https://i.pinimg.com/474x/9e/ff/b8/9effb8864aa7f145cd62243f33667b60.jpg">
 <% end%>
