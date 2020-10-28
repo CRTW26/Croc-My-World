@@ -9,9 +9,6 @@ class FriendshipsController < ApplicationController
     @friendship = Friendship.new
   end
 
-  def show
-  end
-
   def create
     @friendship = Friendship.create(friend_params) 
     redirect_to friendships_url
