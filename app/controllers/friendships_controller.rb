@@ -18,15 +18,9 @@ class FriendshipsController < ApplicationController
         redirect_to friendships_url
   end 
 
-  # def edit
-  #   @friend = User.find(params[:friend_id]) 
-  # end 
-
   def update
-    p params[:friend_id]
     @friend = User.find(params[:friend_id])
-    @user = current_user
-    @user.confirm(@friend)
+    current_user.confirm(@friend)
     redirect_to friendships_url
   end 
 
