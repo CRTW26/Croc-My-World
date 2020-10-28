@@ -3,6 +3,7 @@
   <p>You have alreay sent request</p>
 <% elsif @friend.pending.include?(current_user) %>
   <p>You have request pending</p>
+  <%= link_to 'Confrim', friendships_path(friend_id: @friend.id), :method => :patch %>
 <% else%> 
   <%= form_for @friendship do |form| %>
   <%= form.text_field :friend_id, value: "#{params[:friend_id]}" %> 

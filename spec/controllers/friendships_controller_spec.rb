@@ -32,8 +32,8 @@ RSpec.describe FriendshipsController, type: :controller do
 
   describe 'PATCH/update' do 
     it 'accepts friend request' do 
-     friendship = FactoryBot.create(:friendship)
-     patch :update, params: {friendship: { friend_id: @friend.id} } 
+     friendship = FactoryBot.create(:friendship, :confirm_request)
+     patch :update, params: { friend_id: @friend.id} 
      expect(response).to redirect_to friendships_path
     end 
   end 
