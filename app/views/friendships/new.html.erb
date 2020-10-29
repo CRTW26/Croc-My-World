@@ -1,6 +1,6 @@
 <h1><%= (@friend.name).capitalize %>'s profile</h1>
 <%if @friend.avatar.attached?%>
-<%= image_tag(@user.avatar, class: "usersimage")%>
+<%= image_tag(@friend.avatar, class: "usersimage")%>
 <%else%>
 <image id="usersimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg">
 <% end%>
@@ -27,5 +27,5 @@
   <%= form.hidden_field :friend_id, value: "#{params[:friend_id]}" %> 
   <%= form.submit 'Add friend' %>
   <% end %>
-<% end %> 
+<% end %> <br>
 <%= link_to "Back", :back %>
