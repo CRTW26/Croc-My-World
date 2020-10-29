@@ -1,0 +1,25 @@
+<h1>Maskbook Users</h1>
+<br>
+<% @users.each do |user| %>
+
+  <%if user.avatar.attached?%> 
+  
+<%= image_tag(user.avatar, class: 'profileimg')%>
+<%else%>
+<image id="profileimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg"><br>
+<% end%>
+<br>
+  Name: 
+  <%= user.name %> <br>
+  Email:
+<%= user.email %><br>
+
+
+<br>
+<%= link_to "Visit this user's page", user_path(user.id) %><br>
+<br>
+<% end %>
+
+<%= link_to "Back", :back %>
+
+
