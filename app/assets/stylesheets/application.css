@@ -78,6 +78,15 @@ form {
   border-radius: 25px;
 }
 
+.post-button {
+background-color: #004E89;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+}
+
 .message, .showpost, .indvposts {
   background: darken(whitesmoke, 10%);
 	border: 2px solid #004E89;
@@ -106,8 +115,9 @@ textarea, #comment_comment {
 }
 
 .img-logo {
-  margin-top: 12px;
-	width: 20%;
+  margin-top: 20px;
+  margin-bottom: 12px;
+	width: 30%;
 	border-radius: 4px;
 }
 
@@ -118,7 +128,6 @@ textarea, #comment_comment {
   background-attachment: fixed;
   background-repeat: repeat-x;
 	color:  #004E89;
-  background-color: white;
   margin: auto;
 	text-align: center;
 	max-height: 10%;
@@ -134,7 +143,6 @@ textarea, #comment_comment {
   overflow: scroll;
   width: 45%;
   height: 62vh;
-  padding-left: 55px;
 }
 
 .line-break {

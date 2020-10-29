@@ -24,3 +24,4 @@
 .history
 /coverage/.last_run.json
 /coverage/.resultset.json
+/config/master.key
