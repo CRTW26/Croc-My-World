@@ -1,6 +1,19 @@
 <h1>User Profile</h1>
-<% if current_user.pending.include?(@friend)  %>
-  <p>You have alreay sent request</p>
+<h1><%= @friend.name %></h1>
+<h5><%= @friend.email%></h5>
+<% @friend.posts.each do |post| %>
+<%= post.message %> 
+<% end %> <br>
+<%if @friend.avatar.attached?%>
+<%= image_tag(@friend.avatar)%>
+<%else%>
+<image src="https://i.pinimg.com/474x/9e/ff/b8/9effb8864aa7f145cd62243f33667b60.jpg">
+<% end%>
+
+<% if current_user.friend?(@friend) || @friend.friend?(current_user)%>
+  <p> You are friends already</p>
+<% elsif current_user.pending.include?(@friend)  %>
+  <p>You have already sent request</p>
 <% elsif @friend.pending.include?(current_user) %>
   <p>You have request pending</p>
   <%= link_to 'Confirm', friendships_path(friend_id: @friend.id), :method => :patch %>
@@ -9,5 +22,5 @@
   <%= form_for @friendship do |form| %>
   <%= form.hidden_field :friend_id, value: "#{params[:friend_id]}" %> 
   <%= form.submit 'Add friend' %>
-      <% end %>
+  <% end %>
 <% end %> 
