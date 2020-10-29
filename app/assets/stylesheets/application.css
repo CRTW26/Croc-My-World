@@ -127,8 +127,8 @@ textarea, #comment_comment {
 
 .img-logo {
   margin-top: 20px;
-  margin-bottom: 12px;
-	width: 30%;
+  margin-bottom: 10px;
+	width: 15%;
 	border-radius: 4px;
 }
 
@@ -191,9 +191,9 @@ color:  #004E89;
 }
 
 .usersimage, #usersimg {
-  width: 17%;
+  width: 10%;
   border-radius: 50%;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 

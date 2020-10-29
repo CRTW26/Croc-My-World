@@ -8,7 +8,6 @@
 <h4>Name: <%= @friend.name %></h4>
 <h5>Email: <%= @friend.email%></h5>
 <div id="message">
-
 <br>
 <u><%= @friend.name %>'s posts:</u><br> <br>
 <% @friend.posts.each do |post| %>
@@ -31,9 +30,9 @@
 <% end %> <br>
 </div>
 <br>
-<h2>Are you friends?</h2> <br>
+<h2>Are you friends?</h2> 
 <% if current_user.friend?(@friend) || @friend.friend?(current_user)%>
-  <p> You are friends already</p>
+  <p>You are friends already</p>
 <% elsif current_user.pending.include?(@friend)  %>
   <p>You have already sent request</p>
 <% elsif @friend.pending.include?(current_user) %>
