@@ -85,6 +85,8 @@ Team Croc is:
 * [Johnny Yip](https://github.com/JYip93)
 * [Louis Kirkham](https://github.com/TheDancingClown)
 * [Richard Pryce](https://github.com/prycey77)
-* [Viktorija Jusko](https://github.com/vikjusko)
+* [Viktorija Jusko](https://github.com/vikjusko) 
+ 
+You can follow our development journey via the [Wiki](https://github.com/TheDancingClown/Croc-My-World/wiki) where each team member summarised leading a two day sprint.
 
 
