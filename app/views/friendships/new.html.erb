@@ -4,11 +4,11 @@
 <%else%>
 <image id="usersimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg">
 <% end%>
-<% @friend.posts.each do |post| %>
-<br>
 <h4>Name: <%= @friend.name %></h4>
 <h5>Email: <%= @friend.email%></h5>
 <u><%= @friend.name %>'s posts:</u><br>
+<% @friend.posts.each do |post| %>
+<br>
 <%= post.message %> 
 <br>
 <% end %> <br>
