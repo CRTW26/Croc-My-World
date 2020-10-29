@@ -32,5 +32,5 @@ RSpec.feature 'View users', type: :feature do
 		click_on "Visit this user's page"
   	expect(page).to have_content("Test")
   	expect(page).to have_content("user@test.com")
-end
+  end
 end
