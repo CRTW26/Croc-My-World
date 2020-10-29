@@ -11,8 +11,8 @@ class FriendshipsController < ApplicationController
 
   def create
     @friendship = Friendship.create(friend_params) 
+    flash[:notice] = "Friend request sent!"
     redirect_to friendships_url
-    flash[:success] = "Friend request sent!"
   end 
 
   def show 
@@ -21,7 +21,7 @@ class FriendshipsController < ApplicationController
   def update
     if current_user.confirm(@friend)
       redirect_to friendships_url
-      flash[:success] = "Friend request accepted!"
+      flash[:notice] = "Friend request accepted!"
     else
       render 'new'
     end
@@ -31,7 +31,7 @@ class FriendshipsController < ApplicationController
     @friendship = Friendship.find_by user_id: params[:friend_id] , friend_id: current_user.id
     @friendship.destroy
     redirect_to friendships_path 
-    flash[:success] = "Friend request denied!"
+    flash[:notice] = "Friend request denied!"
   end
 
  private
