@@ -19,12 +19,12 @@ class FriendshipsController < ApplicationController
   end
 
   def update
-    if current_user.confirm(@friend)
+    current_user.confirm(@friend) ## if
       redirect_to friendships_url
       flash[:notice] = "Friend request accepted!"
-    else
-      render 'new'
-    end
+    # else
+    #   render 'new'
+    # end
   end 
 
   def destroy
