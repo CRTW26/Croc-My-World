@@ -1,8 +1,8 @@
 <div class="post_page">
 <%= form_for @post do |form| %>
-Your post here: <br>
-  <%= form.label :message %>
-  <%= form.text_field :message %> <br>
+ <br>
+ <%= form.label :message %> 
+  <%= form.text_area :message %> <br>
   <%= form.submit "Submit" %>
 <% end %>
 </div>

@@ -21,16 +21,17 @@
   color: white;
   text-shadow: 1px 1px black;
 }
+
 body {
   font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
-  min-height: 100vh;
-
-  color: #262626;
+  height: 100vh;
+	color: #004E89;
   padding-bottom: 3rem;
   margin: auto;
   padding: 10px;
   text-align: center;
-  background-color: #ffd3ba;
+  overflow: hidden;
+  width: 100%
 }
 
 .navbar-text {
@@ -46,7 +47,8 @@ form {
   height: 50%;
   overflow: hidden;
   border: 0 solid #000;
-  margin: auto;
+	margin: auto;
+	text-align: center;
 }
 
 #user_password,
@@ -68,7 +70,7 @@ form {
   margin-top: 12px;
 }
 
-.button {
+.button, input[type="submit"] {
   background-color: #1f5cab85;
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -77,23 +79,13 @@ form {
   border-radius: 25px;
 }
 
-.message {
+.message, .showpost {
   background: darken(whitesmoke, 10%);
-  border: 2px solid #d0ccd0;
-  border-width: 30%;
-  position: center;
-}
-input[type="submit"] {
-  width: 45%;
-  background-color: #23b5d3;
-  border: 1px solid #23b5d3;
-  padding: 5px 12px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 3px;
-  margin-top: 12px;
-  font-size: 18px;
+	border: 2px solid #004E89;
+	border-width: 30%;
+	border-radius: 8px;
+  background-color: white;
+  padding: 10px
 }
 
 .new_post {
@@ -101,13 +93,13 @@ input[type="submit"] {
 }
 
 #post_message,
-textarea {
+textarea, #comment_comment {
   width: 90%;
   height: 120px;
   margin-top: 10px;
   margin-bottom: 5px;
   padding: 8px 12px;
-  border: 1px solid #dbdbdb;
+	border: 1px solid #dbdbdb;
   box-sizing: border-box;
   border-radius: 3px;
   border-radius: 2px;
@@ -116,80 +108,65 @@ textarea {
 
 .img-logo {
   margin-top: 12px;
-  width: 4%;
-  border-radius: 50%;
+	width: 20%;
+	border-radius: 4px;
 }
 
-.posts-view,
-.showing,
-.editing,
-.edit_page {
+.posts-view, .showing, .editing, .edit_page, .view_com {
   font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
-  background-image: url("https://www.epmmagazine.com/downloads/7441/download/face%20masks.jpg?cb=cedd8e88e25c2482f57e628a621d9a8c&w=640");
+	background-image: url("https://i.ibb.co/kMHzXfQ/maskbookicon.jpg");
   background-position: center bottom;
+  background-attachment: fixed;
   background-repeat: repeat-x;
-  color: #262626;
-  background-color: #ffd3ba;
+	color:  #004E89;
+  background-color: white;
   margin: auto;
-  width: 100%;
-  text-align: center;
+	text-align: center;
+	max-height: 10%;
 }
 
-.viewing {
+.viewing, .showingpost {
   margin: auto;
-  width: 60%;
+  width: 50%;
   padding: 10px;
 }
 
+.viewing {
+  overflow: scroll;
+  width: 45%;
+  height: 62vh;
+  padding-left: 55px;
+}
+
+.line-break {
+  white-space: pre-line;
+}
+
 .dropbtn {
-  background-color: #8e3e8c85;
-  color: rgb(231, 219, 219);
+  background-color: #AFD2E9;
+  color: white;
   padding: 10px;
   font-size: 12px;
   border: none;
   border-radius: 25px;
+  text-align: center
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  background-color: #c3a1a1;
-  min-width: 250px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 25px;
-}
-
-.dropdown-content a {
-  color: black;
-  /* padding: 12px 16px; */
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #a948b4;
-}
-.viewing {
-	margin: auto;
-	width: 60%;
-	padding: 10px;
+.postbtn {
+  font-size: 12px;
+  padding: 0px 10px;
+  color: unset
 }
 
 .post_like:after {
 	content: "Unlike";
 }
+
+.cancel, .unhappy {
+color:  #004E89;
+}
+
+
 
 
 
