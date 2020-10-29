@@ -1,17 +1,21 @@
+<body class="view-friend">
 <h1><%= (@friend.name).capitalize %>'s profile</h1>
 <%if @friend.avatar.attached?%>
 <%= image_tag(@friend.avatar, class: "usersimage")%>
 <%else%>
 <image id="usersimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg">
 <% end%>
-<% @friend.posts.each do |post| %>
-<br>
 <h4>Name: <%= @friend.name %></h4>
 <h5>Email: <%= @friend.email%></h5>
+<div id="message">
 <u><%= @friend.name %>'s posts:</u><br>
-<%= post.message %> 
+<% @friend.posts.each do |post| %>
+<br>
+<%= post.message %> <br>
+<u><%= ((Time.now - post.created_at)/10000).ceil %> hours ago</u>
 <br>
 <% end %> <br>
+</div>
 <br>
 <h2>Are you friends?</h2> <br>
 <% if current_user.friend?(@friend) || @friend.friend?(current_user)%>
@@ -29,3 +33,4 @@
   <% end %>
 <% end %> <br>
 <%= link_to "Back", :back %>
+</body>
