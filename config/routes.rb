@@ -8,16 +8,14 @@ Rails.application.routes.draw do
   resources :posts do
     resources :likes
   end
-  resources :users, :only =>[:show] ##
+  resources :users, only: [:show] ##
   resources :comments
-  resources :friendships do 
-    collection do 
+  resources :friendships do
+    collection do
       patch :update
       delete :destroy
-    end 
+    end
   end
   match '/users', to: 'users#index', via: 'get'
   match '/users/:id', to: 'users#show', via: 'get'
 end
-
-

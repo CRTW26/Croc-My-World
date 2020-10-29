@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :friendship do
     user_id { 5 }
@@ -5,9 +7,9 @@ FactoryBot.define do
     confirmed { false }
   end
 
-  trait :confirm_request do 
+  trait :confirm_request do
     user_id { 6 }
     friend_id { 5 }
     confirmed { false }
-  end 
+  end
 end
