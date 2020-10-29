@@ -25,8 +25,8 @@ Include logo/demo screenshot etc.
 
 <b>Deployed with</b>
 - [Heroku](https://acebook-croc-my-world.herokuapp.com/)
-- [Amazon S3 for image storage]
-- [Circle CI]
+- [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html)
+- [Circle CI](https://github.com/circleci)
 
 ## Features
 * User authentication - redirects to the login page when not signed in
