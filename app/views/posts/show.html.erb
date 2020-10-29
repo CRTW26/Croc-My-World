@@ -1,14 +1,16 @@
 
 
   <p><%= @post.message %></p>
+  <%likes = "#{@post.likes.count.to_s}" + " #{@post.likes.count ==1 ? 'Like' : 'Likes'}"%>
+  <%= button_to "#{likes}", post_likes_path(@post), method: :post %>
   <p>
     <% @post.comments.each do |comment| %>
     <p>
       <%= comment.comment %>
       Posted by:
       <%= comment.user.name %>
-      <%= link_to 'Edit Comment', edit_comment_path(comment) %>
-       <%= link_to 'Delete Comment', comment_path(comment), :method => :delete %>
+      <%= link_to 'Edit', edit_comment_path(comment) %>
+       <%= link_to 'Delete', comment_path(comment), :method => :delete %>
     
     </p>
     <% end %>
