@@ -27,9 +27,11 @@ RSpec.feature 'View users', type: :feature do
 	end
 
 	scenario "User can view their profile informaiton" do
-  	sign_up
+		sign_up
+		click_on "Logout"
+		sign_up_second_user
 		click_on "All users"
-		click_on "Visit this user's page"
+		click_on "View Profile"
   	expect(page).to have_content("Test")
   	expect(page).to have_content("user@test.com")
 end
