@@ -20,7 +20,6 @@ RSpec.describe FriendshipsController, type: :controller do
     get :new, params: { friend_id: @friend.id }
     expect(response).to have_http_status(200)
     end 
-    #test for 404 response when no friend_id passed in?
   end 
 
   describe 'POST/create' do
