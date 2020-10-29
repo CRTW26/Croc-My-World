@@ -1,0 +1,15 @@
+List Users
+<br>
+<% @users.each do |user| %>
+  <%= user.name %> <br>
+<%= user.email %><br>
+  <%if user.avatar.attached?%> 
+<%= image_tag(user.avatar, height: 100, width: 100) %>
+<%else%>
+<image src="https://i.pinimg.com/474x/9e/ff/b8/9effb8864aa7f145cd62243f33667b60.jpg" height="100" width="100"><br>
+<% end%>
+<%= link_to "Visit this user's page", user_path(user.id) %><br>
+<br>
+<% end %>
+
+
