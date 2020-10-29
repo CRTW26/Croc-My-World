@@ -8,12 +8,26 @@
 <h4>Name: <%= @friend.name %></h4>
 <h5>Email: <%= @friend.email%></h5>
 <div id="message">
-<u><%= @friend.name %>'s posts:</u><br>
+
+<br>
+<u><%= @friend.name %>'s posts:</u><br> <br>
 <% @friend.posts.each do |post| %>
-<br>
 <%= post.message %> <br>
-<u><%= ((Time.now - post.created_at)/10000).ceil %> hours ago</u>
-<br>
+      <u> posted: </u>
+      <% days = ((Time.now - post.created_at) / 86400 ).to_i %> 
+      <% hours =  (((Time.now - post.created_at) / 3600) % 24 ).to_i %> 
+      <% if days > 1 && hours < 1 %>
+      <%= days %> days ago
+      <% elsif days > 1 && hours > 1 %>
+      <%= days %> days 
+      <%= hours %> hours ago
+      <% elsif days < 1 && hours == 1 %>
+      <%= hours %> hour ago
+      <% elsif days < 1 && hours < 1 %>
+      Now
+      <% end %>
+      <br>
+      <br>
 <% end %> <br>
 </div>
 <br>

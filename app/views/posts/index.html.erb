@@ -1,16 +1,28 @@
 <body class="posts-view">
   <p class="new-post">
-    <%= link_to "Whats on your mind?", new_post_path, class: 'post-button'%>
+    <%= link_to "Whats on your mind?", new_post_path, class: 'button'%>
   </p>
   <div class="viewing">
     
     <% @posts.each do |post| %>
     <div class='message'>
       <%= post.user.name%> <br>
-      <u><%= ((Time.now - post.created_at)/10000).ceil %> hours ago</u>
-      <br>
+      <u> posted: </u>
+      <% days = ((Time.now - post.created_at) / 86400 ).to_i %> 
+      <% hours =  (((Time.now - post.created_at) / 3600) % 24 ).to_i %> 
+      <% if days > 1 && hours < 1 %>
+      <%= days %> days ago
+      <% elsif days > 1 && hours > 1 %>
+      <%= days %> days 
+      <%= hours %> hours ago
+      <% elsif days < 1 && hours == 1 %>
+      <%= hours %> hour ago
+      <% elsif days < 1 && hours < 1 %>
+      Now
+      <% end %>
+            <br>
         <span class='line-break'>
-        <%= post.message %>
+        <%=  post.message %>
         </span>
         <br>
         <%= link_to "Edit post", edit_post_path(post), class: 'postbtn'%> 
