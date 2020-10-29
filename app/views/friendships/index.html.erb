@@ -1,6 +1,11 @@
 <% @users.each do |user| %>
   <% unless current_user.id == user.id %>
     <%= user.name %>
+    <%if user.avatar.attached?%> 
+      <%= image_tag(user.avatar, height: 100, width: 100) %>
+    <%else%>
+      <image src="https://i.pinimg.com/474x/9e/ff/b8/9effb8864aa7f145cd62243f33667b60.jpg" height="100" width="100"><br>
+    <% end%>
     <%= link_to "View Profile", new_friendship_path(friend_id: user.id)%>
     <% if current_user.friend?(user) %>
     <%= 'friend!' %>
