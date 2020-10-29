@@ -30,9 +30,6 @@ class FriendshipsController < ApplicationController
   def destroy
     #if 
     @friendship = Friendship.find_by user_id: params[:friend_id] , friend_id: current_user.id
-    p params[:friend_id]
-    p current_user.id
-    p @friendship
     @friendship.destroy
       #current_user.reject(@friend)
       redirect_to friendships_path 

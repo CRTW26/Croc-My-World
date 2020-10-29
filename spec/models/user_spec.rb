@@ -64,6 +64,7 @@ RSpec.describe User, type: :model do
   it 'can sign up without avatar' do
     user = FactoryBot.create(:user)
     expect(user.avatar.attached?).to be false
+    expect(user).to be
   end
 
 
