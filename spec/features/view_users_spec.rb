@@ -22,8 +22,6 @@ RSpec.feature 'View users', type: :feature do
 		click_on "All users"
 		expect(page).to have_content("Test")
 		expect(page).to have_content("User2")
-		expect(page).to have_content("user@test.com")
-		expect(page).to have_content("user2@test.com")
 	end
 
 	scenario "User can view their profile informaiton" do

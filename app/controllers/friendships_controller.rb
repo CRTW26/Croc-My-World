@@ -28,18 +28,10 @@ class FriendshipsController < ApplicationController
   end 
 
   def destroy
-    #if 
     @friendship = Friendship.find_by user_id: params[:friend_id] , friend_id: current_user.id
-    p params[:friend_id]
-    p current_user.id
-    p @friendship
     @friendship.destroy
-      #current_user.reject(@friend)
-      redirect_to friendships_path 
-      flash[:success] = "Friend request denied!"
-    # else
-    #   render 'new'
-    # end
+    redirect_to friendships_path 
+    flash[:success] = "Friend request denied!"
   end
 
  private
