@@ -10,16 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_10_28_135854) do
-=======
-ActiveRecord::Schema.define(version: 20201027112049) do
->>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -41,8 +36,6 @@ ActiveRecord::Schema.define(version: 20201027112049) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-=======
->>>>>>> master
   create_table "comments", force: :cascade do |t|
     t.text "comment"
     t.datetime "created_at", null: false

@@ -56,4 +56,15 @@ RSpec.describe User, type: :model do
     expect(user.friend?(user2)).to eq(true)
   end 
 
+  it 'can signup with uploaded image' do
+    user = FactoryBot.create(:user, :with_avatar)
+    expect(user.avatar.filename).to eq('test-image.jpg')
+  end
+
+  it 'can sign up without avatar' do
+    user = FactoryBot.create(:user)
+    expect(user.avatar.attached?).to be false
+  end
+
+
 end
