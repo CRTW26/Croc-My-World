@@ -44,7 +44,6 @@ RSpec.feature 'View users', type: :feature do
     click_on 'All users'
     click_on 'View Profile'
     click_on 'Confirm'
-    click_on 'View Profile'
     expect(page).to have_content("User2's profile page")
 
   end
