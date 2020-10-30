@@ -10,12 +10,7 @@
     <% end%><br>
     Name:
       <%= user.name %><br>
-      Email:
-    <%= user.email %><br>  
         <%= link_to "View Profile", new_friendship_path(friend_id: user.id)%><br>
-        <% if current_user.friend?(user) %>
-        <%= 'friend!' %>
-        <% end %>
         </div>
       <% end %>
    <% end %>
