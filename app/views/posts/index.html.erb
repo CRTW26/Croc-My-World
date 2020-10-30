@@ -6,7 +6,7 @@
     
     <% @posts.each do |post| %>
     <div class='message'>
-      <%= post.user.name%> <br>
+      <%= post.user.name.titleize%> <br>
       <u> posted: </u>
       <% days = ((Time.now - post.created_at) / 86400 ).to_i %> 
       <% hours =  (((Time.now - post.created_at) / 3600) % 24 ).to_i %> 
