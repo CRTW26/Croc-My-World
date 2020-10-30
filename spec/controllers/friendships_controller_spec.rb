@@ -6,6 +6,7 @@ RSpec.describe FriendshipsController, type: :controller do
   before(:each) do
     @user = FactoryBot.create(:user)
     @friend = FactoryBot.create(:user, :friend)
+    
     sign_in(@user)
   end
 
@@ -20,6 +21,11 @@ RSpec.describe FriendshipsController, type: :controller do
     it 'returns page to add friend' do
       get :new, params: { friend_id: @friend.id }
       expect(response).to have_http_status(200)
+    end
+    it 'Redirects to user page if user is a friend' do
+      friendship = FactoryBot.create(:friendship, :confirmed)
+      get :new, params: { friend_id: @friend.id }
+      expect(response).to redirect_to user_path(@friend)
     end
     # test for 404 response when no friend_id passed in?
   end
