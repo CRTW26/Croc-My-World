@@ -1,34 +1,74 @@
-'trello board'
-https://trello.com/invite/b/TQkCs4aN/0e202ae57f0d33c6543789beec867771/acebook-ruby-on-rails
+# Maskbook
+![Maskbook Logo](app/assets/images/surgicalmaskbook.jpg)
+Maskbook is a social media app that serves as a reminder to keep each other safe. It is also a celebration that facemasks are not a restriction but can be a statement of personality.
+
+## Motivation
+As part of Makers Academy students were challenged to learn Ruby on Rails and make an Acebook app within two weeks. The emphasis is on showing the ability to learn a new framework in a short amount of time and continued development of team work skills.
+ 
+## Screenshots
+Include logo/demo screenshot etc.
+
+## Tech/framework used
+
+<b>Built with</b>
+- [Ruby on Rails 6.0.3.4](https://rubyonrails.org/)
+- [Ruby 2.5.0](https://www.ruby-lang.org/en/)
+- [Postgresql 13.0](https://www.postgresql.org/)
+- [Devise 4.7.3](https://github.com/heartcombo/devise)
+  
+<b>Tested with</b>
+- [Rspec 3.9.3](https://rspec.info/)
+- [Capybara 2.18.0](https://github.com/teamcapybara/capybara)
+- [Selenium Webdriver 3.142.7](https://www.selenium.dev/documentation/en/webdriver/)
+- [FactoryBot Rails 6.1.0](https://github.com/thoughtbot/factory_bot_rails)
+- [Faker 2.14.0](https://github.com/fzaninotto/Faker)
+
+<b>Uploaded to</b>
+- [Heroku](https://acebook-croc-my-world.herokuapp.com/)
+
+## Features
+* User authentication - redirects to the login page when not signed in
+* User registration - a user can register with name, profile pic, email address and password
+* Secure password - password encryption is used on the database and passwords are not visible on signing in
+* Users can view other registered users and make friend requests to other users
+* Users can decline friend requests
+* Users can post a public message which is shown on their profile page
+* Users can edit messages within 10 minutes of creation
+* Users can add and edit comments below messages
+* Users can like and unlike messages
+* Users can only edit our delete their own messages
+* Users can view profile pages of their friends
 
 
-https://acebook-croc-my-world.herokuapp.com/posts
+## Installation and local development
+
++ Check out the repository  
+      git clone https://github.com/TheDancingClown/Croc-My-World  
+      cd Croc-My-World
++ Install required gems  
+   bundle install
++ Create the database  
+      rails db:create  
+      rails db:migrate
++ Start the server  
+      rails server
++ View the app in your browser  
+      visit localhost:3000
 
 
-# AceBook
+## Tests
+Inside your project directory run  
+      rspec
 
-REQUIRED INSTRUCTIONS:
+## How to use?
+Register for a new account via the signup page and follow the links shown to make posts, add comments, like posts and add new friends
 
-1. Fork this repository to `acebook-teamname` and customize
-   the below\*\*
+## Credits
+Team Croc is:
+* Connor Worthington
+* Johnny Yip
+* Louis Kirkham
+* Richard Pryce
+* Viktorija Jusko
 
-[You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
 
-2. The card wall is here: <please update>
-
-## How to contribute to this project
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Quickstart
-
-First, clone this repository. Then:
-
-```bash
-> bundle install
-> bin/rails db:create
-> bin/rails db:migrate
-
-> bundle exec rspec # Run the tests to ensure it works
-> bin/rails server # Start the server at localhost:3000
-```

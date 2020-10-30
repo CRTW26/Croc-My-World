@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'aws-sdk-s3', require: false
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'devise'
 gem 'factory_bot_rails'
 gem 'faker'
 
@@ -40,7 +40,6 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
-  gem 'faker'
   gem 'rspec-rails', '~> 4.0.1'
   gem 'rubocop', require: false
   gem 'rubocop-rspec', require: false
