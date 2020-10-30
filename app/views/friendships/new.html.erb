@@ -1,31 +1,22 @@
-<h1><%= (@friend.name).capitalize %>'s profile</h1>
-<%if @friend.avatar.attached?%>
-<%= image_tag(@friend.avatar, class: "usersimage")%>
-<%else%>
-<image id="usersimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg">
-<% end%>
-<h4>Name: <%= @friend.name %></h4>
-<h5>Email: <%= @friend.email%></h5>
-<u><%= @friend.name %>'s posts:</u><br>
-<% @friend.posts.each do |post| %>
-<br>
-<%= post.message %> 
-<br>
-<% end %> <br>
-<br>
-<h2>Are you friends?</h2> <br>
-<% if current_user.friend?(@friend) || @friend.friend?(current_user)%>
-  <p> You are friends already</p>
-<% elsif current_user.pending.include?(@friend)  %>
-  <p>You have already sent request</p>
-<% elsif @friend.pending.include?(current_user) %>
-  <p>You have request pending</p>
-  <%= link_to 'Confirm', friendships_path(friend_id: @friend.id), :method => :patch %>
-  <%= link_to 'Reject', friendships_path(user_id: current_user.id, friend_id: @friend.id), :method => :delete %>
-<% else%> 
-  <%= form_for @friendship do |form| %>
-  <%= form.hidden_field :friend_id, value: "#{params[:friend_id]}" %> 
-  <%= form.submit 'Add friend' %>
-  <% end %>
-<% end %> <br>
-<%= link_to "Back", :back %>
+<body class="view-friend">
+  <h1><%= (@friend.name).capitalize %>'s profile</h1>
+  <%if @friend.avatar.attached?%>
+    <%= image_tag(@friend.avatar, class: "usersimage")%>
+  <%else%>
+    <image id="usersimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg">
+  <% end%>
+  <h4>Name: <%= @friend.name %></h4>
+  <% if current_user.pending.include?(@friend)  %>
+    <p>You have already sent request</p>
+  <% elsif @friend.pending.include?(current_user) %>
+    <p>You have request pending</p>
+    <%= link_to 'Confirm', friendships_path(friend_id: @friend.id), :method => :patch %>
+    <%= link_to 'Reject', friendships_path(user_id: current_user.id, friend_id: @friend.id), :method => :delete %>
+  <% else%> 
+    <%= form_for @friendship do |form| %>
+    <%= form.hidden_field :friend_id, value: "#{params[:friend_id]}" %> 
+    <%= form.submit 'Add friend' %>
+    <% end %>
+  <% end %> <br>
+  <%= link_to "Back", :back %>
+</body>

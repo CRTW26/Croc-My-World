@@ -9,9 +9,23 @@
 <div class="indvposts">
 <u><%= @user.name%>'s posts: </u><br>
 <br>
+<br>
 <% @user.posts.each do |post| %>
-<%= post.message %> 
-<u><%= ((Time.now - post.created_at)/10000).ceil %> hours ago</u> 
+<%= post.message %> <br>
+      <u> posted: </u>
+      <% days = ((Time.now - post.created_at) / 86400 ).to_i %> 
+      <% hours =  (((Time.now - post.created_at) / 3600) % 24 ).to_i %> 
+      <% if days > 1 && hours < 1 %>
+      <%= days %> days ago
+      <% elsif days > 1 && hours > 1 %>
+      <%= days %> days 
+      <%= hours %> hours ago
+      <% elsif days < 1 && hours == 1 %>
+      <%= hours %> hour ago
+      <% elsif days < 1 && hours < 1 %>
+      Now
+      <% end %><br>
+			<br>
 <% end %> <br>
 <br>
 </div>

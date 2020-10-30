@@ -19,24 +19,24 @@ RSpec.describe User, type: :model do
     user = User.new(name: 'Mark zuckerberg', email: 'mark@facebook.com', password: '')
     expect(user).to_not be_valid
   end
-  
-  it "has no friends to begin with" do
+
+  it 'has no friends to begin with' do
     user = User.new(name: 'Mark Zuckerberg', email: 'mark@facebook.com', password: 'secret')
     expect(user.friends).to be_empty
   end
- 
-  it "has a pending friend request" do
+
+  it 'has a pending friend request' do
     user = FactoryBot.create(:user)
     user2 = FactoryBot.create(:user, :friend)
     friendship = FactoryBot.create(:friendship)
     expect(user.pending).to_not be_empty
-  end 
+  end
 
-  it 'can view friend requests' do 
+  it 'can view friend requests' do
     user = FactoryBot.create(:user)
     user2 = FactoryBot.create(:user, :friend)
     friendship = FactoryBot.create(:friendship)
-    expect(user2.requests).to_not be_empty 
+    expect(user2.requests).to_not be_empty
   end
 
   it 'can confirm friend request' do
@@ -46,15 +46,15 @@ RSpec.describe User, type: :model do
     user2.confirm(user)
     expect(user2.requests).to be_empty
     expect(user.pending).to be_empty
-  end 
+  end
 
   it 'returns true for users being friends' do
-     user = FactoryBot.create(:user)
+    user = FactoryBot.create(:user)
     user2 = FactoryBot.create(:user, :friend)
     friendship = FactoryBot.create(:friendship)
-    user2.confirm(user) 
+    user2.confirm(user)
     expect(user.friend?(user2)).to eq(true)
-  end 
+  end
 
   it 'can signup with uploaded image' do
     user = FactoryBot.create(:user, :with_avatar)
@@ -66,6 +66,4 @@ RSpec.describe User, type: :model do
     expect(user.avatar.attached?).to be false
     expect(user).to be
   end
-
-
 end

@@ -9,7 +9,7 @@ end
 def log_in_user
   fill_in 'Email', with: 'user@test.com'
   fill_in 'Password', with: 'password'
-  click_on 'Log in'  
+  click_on 'Log in'
 end
 
 def sign_up
@@ -35,4 +35,15 @@ def add_comment
   click_link 'Add comment'
   fill_in 'Comment', with: 'First comment!!'
   click_button 'Submit'
+end
+
+def add_friend
+ 
+  click_link 'All users'
+  click_link 'View Profile'
+  click_on 'Add friend'
+end
+
+def confirm_friend
+  
 end

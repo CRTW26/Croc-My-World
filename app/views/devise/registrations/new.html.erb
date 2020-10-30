@@ -17,7 +17,7 @@
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em>(6-10 characters)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
@@ -30,7 +30,7 @@
   <div class=”field”> (Upload your new profile picture below!)
   <%= f.file_field :avatar %> </div>
 </div>
-
+<br>
   <div class="actions">
     <%= f.submit "Confirm" %>
   </div>

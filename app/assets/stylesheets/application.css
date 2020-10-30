@@ -18,8 +18,11 @@
 .sign_up {
   background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/06/25/08/istock-1211156080.jpg");
   margin-top: 120px;
+  background-size: cover;
   color: white;
   text-shadow: 1px 1px black;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -28,9 +31,9 @@ body {
 	color: #004E89;
   padding-bottom: 3rem;
   margin: auto;
-  padding: 10px;
   text-align: center;
-  width: 100%
+    width: 100%;
+    height: 100%;
 }
 
 .navbar-text {
@@ -78,6 +81,15 @@ form {
   border-radius: 25px;
 }
 
+.post-button {
+background-color: #004E89;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+}
+
 .message, .showpost, .indvposts {
   background: darken(whitesmoke, 10%);
 	border: 2px solid #004E89;
@@ -87,8 +99,20 @@ form {
   padding: 10px
 }
 
+#message {
+width: 90%;
+height: 120px;
+border: 2px solid #004E89;
+border-width: 30%;
+border-radius: 8px;
+margin: auto;
+width: 65%;
+background-color: white;
+}
+
 .new_post {
   margin-top: 85px;
+  
 }
 
 #post_message,
@@ -98,7 +122,8 @@ textarea, #comment_comment {
   margin-top: 10px;
   margin-bottom: 5px;
   padding: 8px 12px;
-	border: 1px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
+  background-color: white;
   box-sizing: border-box;
   border-radius: 3px;
   border-radius: 2px;
@@ -106,19 +131,19 @@ textarea, #comment_comment {
 }
 
 .img-logo {
-  margin-top: 12px;
-	width: 20%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+	width: 15%;
 	border-radius: 4px;
 }
 
-.posts-view, .showing, .editing, .edit_page, .view_com {
+.posts-view, .showing, .editing, .edit_page, .view_com, .view-friend {
   font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
 	background-image: url("https://i.ibb.co/kMHzXfQ/maskbookicon.jpg");
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: repeat-x;
 	color:  #004E89;
-  background-color: white;
   margin: auto;
 	text-align: center;
 	max-height: 10%;
@@ -134,7 +159,6 @@ textarea, #comment_comment {
   overflow: scroll;
   width: 45%;
   height: 62vh;
-  padding-left: 55px;
 }
 
 .line-break {
@@ -167,16 +191,25 @@ color:  #004E89;
 
 
 #profileimg, .profileimg {
-  width: 15%;
+  width: 50%;
   border-radius: 50%;
 }
 
 .usersimage, #usersimg {
-  width: 25%;
+  width: 10%;
   border-radius: 50%;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+}
 
+.grid-user {
+  margin: 30px;
+  text-align: center;
+}
 
 
