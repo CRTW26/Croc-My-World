@@ -6,8 +6,11 @@ Maskbook is a social media app that serves as a reminder to keep each other safe
 As part of Makers Academy students were challenged to learn Ruby on Rails and make an Acebook app within two weeks. The emphasis is on showing the ability to learn a new framework in a short amount of time and continued development of team work skills.
  
 ## Screenshots
-![Posts](app/assets/images/posts.png)
+The home page displays all user posts
+![Posts](app/assets/images/posts.png)  
+All users are displayed in a grid - click on a to request friendship
 ![Users](app/assets/images/users.png)
+Each user profile page display all their own posts
 ![Profile](app/assets/images/profilepage.png)
 
 ## Tech/framework used
