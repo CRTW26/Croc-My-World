@@ -7,9 +7,7 @@ RSpec.feature 'Confirm friend', type: :feature do
     sign_up
     click_link 'Logout'
     sign_up_second_user
-    click_link 'All users'
-    click_link 'View Profile'
-    click_on 'Add friend'
+    add_friend
     click_link 'Logout'
     log_in_user
     click_link 'All users'
@@ -22,9 +20,7 @@ RSpec.feature 'Confirm friend', type: :feature do
     sign_up
     click_link 'Logout'
     sign_up_second_user
-    click_link 'All users'
-    click_link 'View Profile'
-    click_on 'Add friend'
+    add_friend
     click_link 'Logout'
     log_in_user
     click_link 'All users'

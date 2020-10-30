@@ -33,4 +33,19 @@ RSpec.feature 'View users', type: :feature do
     click_on 'View Profile'
     expect(page).to have_content('Test')
   end
+
+  scenario 'Users who are friends see other users profile' do
+    sign_up
+    click_link 'Logout'
+    sign_up_second_user
+    add_friend
+    click_on 'Logout'
+    log_in_user
+    click_on 'All users'
+    click_on 'View Profile'
+    click_on 'Confirm'
+    expect(page).to have_content("User2's profile page")
+
+  end
+  
 end
