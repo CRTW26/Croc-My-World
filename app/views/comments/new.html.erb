@@ -4,7 +4,9 @@
 <p class='showpost'>
 <% post = Post.find(params[:post_id])%>
 <%= post.user.name%> <br>
- <u><%= ((Time.now - post.created_at)/10000).ceil %> hours ago</u> <br>
+ <u>Posted: </u>
+    <%= post.created_at %> 
+    <br>
 <br>
   <%= post.message %><br><br>
   </p>

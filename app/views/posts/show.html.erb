@@ -8,7 +8,7 @@
     <p>
       <%= comment.comment %>
       Posted by:
-      <%= comment.user.name %>
+      <%= comment.user.name.titleize %>
       <%= link_to 'Edit', edit_comment_path(comment) %>
        <%= link_to 'Delete', comment_path(comment), :method => :delete %>
     
@@ -29,7 +29,7 @@
 
 <body class="showing">
   <p><%= @post.message %></p> <br>
-  posted by: <%= @post.user.name%> <br>
+  posted by: <%= @post.user.name.titleize%> <br>
   <%= @post.created_at %> <br>
 
   <p><%= link_to 'Home', posts_path %>

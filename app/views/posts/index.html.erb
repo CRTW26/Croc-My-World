@@ -6,11 +6,12 @@
     
     <% @posts.each do |post| %>
     <div class='message'>
-      <%= post.user.name%> <br>
-      <u><%= ((Time.now - post.created_at)/10000).ceil %> hours ago</u>
-      <br>
+      <%= post.user.name.titleize%> <br>
+      <u> posted: </u>
+      <%= post.created_at %> 
+            <br>
         <span class='line-break'>
-        <%= post.message %>
+        <%=  post.message %>
         </span>
         <br>
         <%= link_to "Edit post", edit_post_path(post), class: 'postbtn'%> 
@@ -40,11 +41,11 @@
         <% end %>
       </div>
     </div> 
-
     <% end %>
-  </div>
-
 <%= link_to 'All users', friendships_path %>
 <%= link_to 'My profile', user_path(current_user.id) %>
+
+  </div>
+
 </body>
 
