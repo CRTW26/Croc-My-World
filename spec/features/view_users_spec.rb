@@ -25,13 +25,12 @@ RSpec.feature 'View users', type: :feature do
     expect(page).to have_content('User2')
   end
 
-  scenario 'User can view their profile informaiton' do
+  scenario 'Users who are not friends can only see other users name' do
     sign_up
     click_on 'Logout'
     sign_up_second_user
     click_on 'All users'
     click_on 'View Profile'
     expect(page).to have_content('Test')
-    expect(page).to have_content('user@test.com')
   end
 end
