@@ -36,3 +36,14 @@ def add_comment
   fill_in 'Comment', with: 'First comment!!'
   click_button 'Submit'
 end
+
+def add_friend
+ 
+  click_link 'All users'
+  click_link 'View Profile'
+  click_on 'Add friend'
+end
+
+def confirm_friend
+  
+end
