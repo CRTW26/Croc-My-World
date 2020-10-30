@@ -12,6 +12,14 @@
       <% hours =  (((Time.now - post.created_at) / 3600) % 24 ).to_i %> 
       <% if days > 1 && hours < 1 %>
       <%= days %> days ago
+      <% elsif days ==1 && hours == 1%>
+      <%= days %> day
+      <%= hours %> hour ago
+      <% elsif days == 1 && hours > 1 %>
+      <%= days %> day 
+      <%= hours %> hours ago
+      <% elsif days == 1 && hours < 1 %>
+      <%= days %> day ago
       <% elsif days > 1 && hours > 1 %>
       <%= days %> days 
       <%= hours %> hours ago

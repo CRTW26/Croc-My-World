@@ -4,7 +4,27 @@
 <p class='showpost'>
 <% post = Post.find(params[:post_id])%>
 <%= post.user.name%> <br>
- <u><%= ((Time.now - post.created_at)/10000).ceil %> hours ago</u> <br>
+ <u>Posted: </u>
+  <% days = ((Time.now - post.created_at) / 86400 ).to_i %> 
+      <% hours =  (((Time.now - post.created_at) / 3600) % 24 ).to_i %> 
+      <% if days > 1 && hours < 1 %>
+      <%= days %> days ago
+      <% elsif days ==1 && hours == 1%>
+      <%= days %> day
+      <%= hours %> hour ago
+      <% elsif days == 1 && hours > 1 %>
+      <%= days %> day 
+      <%= hours %> hours ago
+      <% elsif days == 1 && hours < 1 %>
+      <%= days %> day ago
+      <% elsif days > 1 && hours > 1 %>
+      <%= days %> days 
+      <%= hours %> hours ago
+      <% elsif days < 1 && hours == 1 %>
+      <%= hours %> hour ago
+      <% elsif days < 1 && hours < 1 %>
+      Now
+      <% end %><br>
 <br>
   <%= post.message %><br><br>
   </p>
