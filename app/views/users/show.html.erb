@@ -4,10 +4,10 @@
 <%else%>
 <image id="usersimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg">
 <% end%>
-<h1><%= @user.name %>'s profile page</h1>
+<h1><%= @user.name.titleize %>'s profile page</h1>
 <h5><%= @user.email%></h5>
 <div class="indvposts">
-<u><%= @user.name%>'s posts: </u><br>
+<u><%= @user.name.titleize%>'s posts: </u><br>
 <br>
 <br>
 <% @user.posts.each do |post| %>

@@ -9,8 +9,11 @@
     <image id="profileimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg"><br>
     <% end%><br>
     Name:
-      <%= user.name %><br>
+      <%= user.name.titleize %><br>
         <%= link_to "View Profile", new_friendship_path(friend_id: user.id)%><br>
+         <% if current_user.friend?(user) %>
+        <%= "#{user.name.titleize} is your friend!" %>
+        <% end %>
         </div>
       <% end %>
    <% end %>

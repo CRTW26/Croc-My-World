@@ -1,5 +1,5 @@
 <body class="view-friend">
-<h1><%= (@friend.name).capitalize %>'s profile</h1>
+<h1><%= (@friend.name).titleize %>'s profile</h1>
 <%if @friend.avatar.attached?%>
 <%= image_tag(@friend.avatar, class: "usersimage")%>
 <%else%>
