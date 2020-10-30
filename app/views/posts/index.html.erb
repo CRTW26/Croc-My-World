@@ -8,26 +8,7 @@
     <div class='message'>
       <%= post.user.name.titleize%> <br>
       <u> posted: </u>
-      <% days = ((Time.now - post.created_at) / 86400 ).to_i %> 
-      <% hours =  (((Time.now - post.created_at) / 3600) % 24 ).to_i %> 
-      <% if days > 1 && hours < 1 %>
-      <%= days %> days ago
-      <% elsif days ==1 && hours == 1%>
-      <%= days %> day
-      <%= hours %> hour ago
-      <% elsif days == 1 && hours > 1 %>
-      <%= days %> day 
-      <%= hours %> hours ago
-      <% elsif days == 1 && hours < 1 %>
-      <%= days %> day ago
-      <% elsif days > 1 && hours > 1 %>
-      <%= days %> days 
-      <%= hours %> hours ago
-      <% elsif days < 1 && hours == 1 %>
-      <%= hours %> hour ago
-      <% elsif days < 1 && hours < 1 %>
-      Now
-      <% end %>
+      <%= post.created_at %> 
             <br>
         <span class='line-break'>
         <%=  post.message %>
