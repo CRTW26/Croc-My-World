@@ -188,7 +188,7 @@ color:  #004E89;
 
 
 #profileimg, .profileimg {
-  width: 15%;
+  width: 50%;
   border-radius: 50%;
 }
 
@@ -198,6 +198,15 @@ color:  #004E89;
   margin-top: 20px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+}
 
+.grid-user {
+  margin: 30px;
+  text-align: center;
+}
 
 
