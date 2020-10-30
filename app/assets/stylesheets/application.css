@@ -137,7 +137,7 @@ textarea, #comment_comment {
 	border-radius: 4px;
 }
 
-.posts-view, .showing, .editing, .edit_page, .view_com, .view-friend {
+.posts-view, .showing, .editing, .edit_page, .view_com, .view-friend, .profileview {
   font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
 	background-image: url("https://i.ibb.co/kMHzXfQ/maskbookicon.jpg");
   background-position: center bottom;

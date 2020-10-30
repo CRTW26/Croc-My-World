@@ -1,3 +1,4 @@
+<body class="profileview">
 <br>
 <%if @user.avatar.attached?%>
 <%= image_tag(@user.avatar, class: "usersimage")%>
@@ -38,3 +39,4 @@
 <br>
 </div>
 <%= link_to "Back", :back %>
+</body>
