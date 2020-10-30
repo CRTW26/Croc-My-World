@@ -1,22 +1,25 @@
 <br>
-<% @users.each do |user| %>
-  <% unless current_user.id == user.id %>
-  <%if user.avatar.attached?%>  
-<%= image_tag(user.avatar, class: 'profileimg')%>
-<%else%>
-<image id="profileimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg"><br>
-<% end%><br>
-Name:
-  <%= user.name %><br>
-  Email:
-<%= user.email %><br>  
-    <%= link_to "View Profile", new_friendship_path(friend_id: user.id)%><br>
-    <% if current_user.friend?(user) %>
-    <%= 'friend!' %>
-    <% end %>
-    <br>
-  <% end %>
-<% end %>
+<div class='grid-container'>
+    <% @users.each do |user| %>
+      <% unless current_user.id == user.id %>
+          <div class='grid-user'>
+      <%if user.avatar.attached?%>  
+    <%= image_tag(user.avatar, class: 'profileimg')%>
+    <%else%>
+    <image id="profileimg" src="https://i.pinimg.com/originals/4a/a0/4b/4aa04be7eb9400ae77a62daf3349b8ab.jpg"><br>
+    <% end%><br>
+    Name:
+      <%= user.name %><br>
+      Email:
+    <%= user.email %><br>  
+        <%= link_to "View Profile", new_friendship_path(friend_id: user.id)%><br>
+        <% if current_user.friend?(user) %>
+        <%= 'friend!' %>
+        <% end %>
+        </div>
+      <% end %>
+   <% end %>
+</div>
 <br>
 <%= link_to "Back", :back %>
 
