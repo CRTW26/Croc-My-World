@@ -9,6 +9,9 @@ class FriendshipsController < ApplicationController
 
   def new
     @friendship = Friendship.new
+    if current_user.friend?(@friend) || @friend.friend?(current_user)
+      redirect_to user_path(@friend)
+    end
   end
 
   def create
